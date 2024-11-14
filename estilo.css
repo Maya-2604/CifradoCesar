@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0; /* Gris claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid #e0e0e0; /* Gris claro */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #646464; /* Morado pastel */
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    color: #000000; /* Morado pastel */
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #78f0d6; /* Bordes suaves */
+    border-radius: 5px;
+    background-color: #ebebeb; /* Fondo gris claro */
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:nth-child(1) {
+    background-color: #78f0d6; /* Rosa pastel */
+    color: #fff;
+}
+
+button:nth-child(2) {
+    background-color: #78f0d6; /* Amarillo pastel */
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+    color: #777978; /* Morado pastel */
+}
+
+/* Colores pastel para opciones específicas */
+#cipher-type {
+    background-color: #ebebeb; /* Azul pastel */
+    color: #c0bcbc;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #70f1d5; /* Enfocar en morado pastel */
+    outline: none;
+}
+
+#cesar-options, #vigenere-options {
+    color: #78f0d6; /* Morado pastel para las opciones */
+}

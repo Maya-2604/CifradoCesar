@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César y Vigenère</title>
+    <link rel="stylesheet" href="estilo.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Cifrado César y Vigenère</h1>
+        <label for="message">Mensaje:</label>
+        <input type="text" id="message" placeholder="Ingresa el texto a cifrar/descifrar">
+
+        <label for="cipher-type">Tipo de cifrado:</label>
+        <select id="cipher-type">
+            <option value="cesar">Cifrado César</option>
+            <option value="vigenere">Cifrado Vigenère</option>
+        </select>
+
+        <div id="cesar-options">
+            <label for="shift">Desplazamiento (César):</label>
+            <input type="number" id="shift" value="3">
+        </div>
+
+        <div id="vigenere-options" style="display:none;">
+            <label for="vigenere-key">Clave (Vigenère):</label>
+            <input type="text" id="vigenere-key" placeholder="Ingresa la clave">
+        </div>
+
+        <div class="buttons">
+            <button id="encrypt-btn">Cifrar</button>
+            <button id="decrypt-btn">Descifrar</button>
+        </div>
+
+        <div class="result">
+            <p>Resultado:</p>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="logica.js"></script>
+</body>
+</html>
